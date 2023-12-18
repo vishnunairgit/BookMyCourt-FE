@@ -1,0 +1,4 @@
+.navbar-brand,.nav-link.active, .nav-link
+{
+    color: white !important;
+}

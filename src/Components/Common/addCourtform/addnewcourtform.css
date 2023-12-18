@@ -1,0 +1,138 @@
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+* {
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+	.col-25,
+	.col-75,
+	input[type='submit'] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 900px) {
+	.addtree .container {
+		display: flex;
+		flex-direction: column;
+	}
+	.addtree .rightSide-container-2 {
+		padding: 10px !important;
+	}
+}
+/* hii */
+.addtree {
+	margin: 20px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.addtree .container {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.addtree .leftSide-container {
+	width: 65%;
+}
+.addtree .leftSide-container .Tree-thumbnail {
+	display: flex;
+}
+.addtree .Tree-thumbnail-rightside {
+	padding-top: 5%;
+}
+.addtree .leftSide-container .Tree-thumbnail-leftside {
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	border-radius: 5px;
+	margin: 0 20px 20px 0;
+}
+.addtree label {
+	width: 100%;
+	padding: 10px 10px 10px 0px;
+	display: inline-block;
+}
+.addtree .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+.addtree .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.addtree input[type='text'],
+select,
+textarea,
+.addtree input[type='number'],
+select,
+textarea,
+.addtree input[type='date'],
+select,
+textarea,
+.addtree input[type='email'],
+select,
+textarea,
+.addtree input[type='password'],
+select,
+textarea {
+	width: 50%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	background-color: #f2f2f2;
+}
+
+/* Clear floats after the columns */
+.addtree .row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/* files upload */
+.addtree .rightSide-container-2 {
+	padding-top: 45%;
+}
+.addtree .fileupload label {
+	width: 40%;
+	border-radius: 4px;
+	resize: vertical;
+}
+.addtree .rightSide-container .text h4 {
+	font-weight: 500;
+}
+.addtree .fileupload [type='file'] {
+	width: 50%;
+	margin: 10px 5px 10px 0px;
+}
+.addtree .fileupload input {
+	background-color: #a7a8a7;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 19%;
+}
+.addtree .fileupload input:hover {
+	background-color: rgb(203, 205, 209);
+}
+/* buttonHolder */
+.addtree .buttonHolder {
+	display: flex;
+	justify-content: space-around;
+	background-color: #ffffff;
+}
+.addtree .button-17 {
+	width: 10%;
+}
+.addtree .mandatory-indicator {
+	color: red;
+	margin-left: 5px;
+}

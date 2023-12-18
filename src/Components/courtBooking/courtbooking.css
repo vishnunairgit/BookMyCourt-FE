@@ -1,0 +1,56 @@
+.Courtdemy
+{
+    width: 100%;
+    height: 700px !important;
+}
+.marquee
+{
+    background-color: black;
+    color: white;
+}
+.courtname_addtimeslot
+{
+display: flex;
+justify-content: space-between;
+}
+.modalstyl
+{
+    padding: 20px;
+}
+.timedroupdown{
+    padding: 0 150px 110px 150px;
+}
+/* .booked-slot {
+    background-color: #ff8080; /* Use a color to visually distinguish booked slots */
+  /* } */ */
+
+  .validation-message {
+    color: red;  /* Set the color of the validation message */
+    font-size: 12px;  /* Set the font size of the validation message */
+  }
+  
+  .mandatory {
+    color: red;  /* Set the color of the asterisk */
+  }
+.courtTinme
+{
+  display: flex;
+  align-items: center !important;
+  padding: 10px;
+}
+
+.courttimedisplay
+{
+  width: 25%;
+  /* height: ; */
+  border: 5px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+#Today,#Tommorrow
+{
+  width: 10rem;
+  margin-top: 15px;
+}
