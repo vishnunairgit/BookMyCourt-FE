@@ -20,11 +20,8 @@ justify-content: space-between;
 .timedroupdown{
     padding: 0 150px 110px 150px;
 }
-/* .booked-slot {
-    background-color: #ff8080; /* Use a color to visually distinguish booked slots */
-  /* } */ */
 
-  .validation-message {
+.validation-message {
     color: red;  /* Set the color of the validation message */
     font-size: 12px;  /* Set the font size of the validation message */
   }

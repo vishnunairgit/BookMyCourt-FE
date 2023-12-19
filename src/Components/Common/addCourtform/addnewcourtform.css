@@ -21,7 +21,9 @@
 		padding: 10px !important;
 	}
 }
+
 /* hii */
+
 .addtree {
 	margin: 20px;
 	padding-bottom: 10px;
@@ -90,12 +92,15 @@ textarea {
 }
 
 /* Clear floats after the columns */
+
 .addtree .row:after {
 	content: '';
 	display: table;
 	clear: both;
 }
+
 /* files upload */
+
 .addtree .rightSide-container-2 {
 	padding-top: 45%;
 }
