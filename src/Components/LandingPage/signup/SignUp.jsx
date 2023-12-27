@@ -24,22 +24,6 @@ const SignUp = ({ setloginsignup }) => {
       }
     )
 
-
-  {/*  to check the signup valus are working or not  > */ }
-
-  // const [state,setstate]=useState()
-  // useEffect(()=>{
-  //   console.log(signupData);
-  // },[signupData])
-
-  {/*  ones we are usng the form componet. then we can use the state  > */ }
-
-  // const test=(e)=>{
-  //   e.preventDefault()
-  // }
-
-  {/*  signupregister */ }
-
   const handilRegister = () => {
     try {
       axios.post(`${BASE_URL}/auth/signup`, signupData)
@@ -60,9 +44,6 @@ const SignUp = ({ setloginsignup }) => {
 
   return (
     <div className="signup">
-
-      {/* <form method='post' action="/signup" > */}
-      {/* <!-- 2 column grid layout with text inputs for the first and last names --> */}
       <div className="row mb-4">
         <div className="col">
           <div className="form-outline">
@@ -132,27 +113,6 @@ const SignUp = ({ setloginsignup }) => {
         <span onClick={() => handilLogin()}>i am already a member</span>
         {/* <span>i am already a member</span> */}
       </div>
-
-      {/* <!-- Register buttons --> */}
-      {/* <div class="text-center">
-          <p>or sign up with:</p>
-          <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-facebook-f"></i>
-          </button>
-
-          <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-google"></i>
-          </button>
-
-          <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-twitter"></i>
-          </button>
-
-          <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-github"></i>
-          </button>
-        </div> */}
-      {/* </form> */}
     </div>
   );
 };

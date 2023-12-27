@@ -17,10 +17,15 @@ import { setuserDetails, setuserRoll } from "../../../ToolKit/userSlic";
 
 // login data
 const Login = ({ setloginsignup }) => {
+
+
+
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
 // redux function calling
-  const {userDetails,userRole}=useSelector ((state)=>state.user)
+  const {userDetails ,userRole}=useSelector ((state)=>state.user)
   const navigate = useNavigate();
   const dispatch = useDispatch()
 
@@ -88,8 +93,6 @@ const Login = ({ setloginsignup }) => {
   const updateUserRoll=()=>{
     dispatch(setuserRoll(123))
   }
-
-
 
 
 

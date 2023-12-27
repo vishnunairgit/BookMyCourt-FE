@@ -3,15 +3,13 @@ import "./App.css";
 import Landing from "./Components/pages/Landing.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/pages/home/Home.jsx";
-// import Navbar from "./Components/Common/Navbar.jsx";
 import Toastcontainer from "./Components/Common/Toastcontainer.jsx";
 import AddNewCourt from "./Components/pages/addNewCourt/AddNewCourt.jsx";
-
-// import { Provider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CourtUserViewPage from "./Components/pages/CourtUserViewpage/CourtUserViewPage.jsx";
 import MyBookings from "./Components/pages/myBookings/MyBookings";
 import { AdminAuth, LoginAuth, UserAuth } from "./Authorization/Authorization.js";
+import EditCourt from "./Components/Common/Edit/EditCourt.jsx";
 
 function App() {
   return (
@@ -36,7 +34,9 @@ function App() {
           {/* adminRoute */}
 
           <Route element={<AdminAuth/>}>
-               <Route path="/AddNewCourt" element={<AddNewCourt />} />
+               <Route path="/AddNewCourt" element={<AddNewCourt/>} />
+               <Route path="/EditCourt/:courtId" element={<EditCourt/>} />
+
           </Route>
 
         </Routes>

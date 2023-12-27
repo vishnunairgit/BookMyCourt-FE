@@ -159,29 +159,7 @@ function AddCourtForm() {
                   />
                 )}
 
-                {/* <label htmlFor="videoUpload">SELECT A VIDEOS</label>
-                <input
-                  type="file"
-                  id="videoUpload"
-                  name="videoUpload"
-                  accept="video/*"
-                />
-                <br />
-                <label htmlFor="pdfUpload">SELECT A PDFS</label>
-                <input
-                  type="file"
-                  id="pdfUpload"
-                  name="pdfUpload"
-                  accept="application/pdf"
-                />
-                <br />
-                <label htmlFor="audioUpload">SELECT AN AUDIO FILES</label>
-                <input
-                  type="file"
-                  id="audioUpload"
-                  name="audioUpload"
-                  accept="audio/*"
-                /> */}
+             
                 <br />
               </div>
             </div>

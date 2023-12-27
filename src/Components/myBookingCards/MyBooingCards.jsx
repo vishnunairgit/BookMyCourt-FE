@@ -30,4 +30,3 @@ function MyBooingCards({bookingdata}) {
 }
 
 export default MyBooingCards
-// name

@@ -1,0 +1,119 @@
+
+
+.editcourt {
+	margin: 20px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.editcourt .container {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.editcourt .leftSide-container {
+	width: 100%;
+}
+.editcourt .leftSide-container .Tree-thumbnail {
+	display: flex;
+}
+.editcourt .Tree-thumbnail-rightside {
+	padding-top: 5%;
+}
+.editcourt .leftSide-container .Tree-thumbnail-leftside {
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	border-radius: 5px;
+	margin: 0 20px 20px 0;
+}
+.editcourt label {
+	width: 100%;
+	padding: 10px 10px 10px 0px;
+	display: inline-block;
+}
+.editcourt .col-25 {
+	float: left;
+	width: 65%;
+	margin-top: 6px;
+}
+.editcourt .col-75 {
+	float: left;
+	width: 100%;
+	margin-top: 6px;
+}
+
+.editcourt input[type='text'],
+select,
+textarea,
+.editcourt input[type='number'],
+select,
+textarea,
+.editcourt input[type='date'],
+select,
+textarea,
+.editcourt input[type='email'],
+select,
+textarea,
+.editcourt input[type='password'],
+select,
+textarea {
+	width: 50%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	background-color: #f2f2f2;
+}
+
+/* Clear floats after the columns */
+
+.editcourt .row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* files upload */
+
+.editcourt .rightSide-container-2 {
+	padding-top: 5%;
+}
+.editcourt .fileupload label {
+	width: 40%;
+	border-radius: 4px;
+	resize: vertical;
+}
+.editcourt .rightSide-container .text h4 {
+	font-weight: 500;
+}
+.editcourt .fileupload [type='file'] {
+	width: 50%;
+	margin: 10px 5px 10px 0px;
+}
+.editcourt .fileupload input {
+	background-color: #a7a8a7;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 19%;
+}
+.editcourt .fileupload input:hover {
+	background-color: rgb(203, 205, 209);
+}
+/* buttonHolder */
+.editcourt .buttonHolder {
+	display: flex;
+	justify-content: space-around;
+	background-color: #ffffff;
+}
+.editcourt .button-17 {
+	width: 10%;
+}
+.editcourt .mandatory-indicator {
+	color: red;
+	margin-left: 5px;
+}

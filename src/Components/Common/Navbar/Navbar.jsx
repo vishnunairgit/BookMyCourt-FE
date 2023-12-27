@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 // import AddNewCourt from "../../pages/AddNewCourt/AddNewCourt";
 // import Home from "../../pages/home/Home";
 // // import myBookingCard from "../pages/assets/fifteen-turf-thane-balkum-thane-cricket-turf-grounds-g2qg8bfasx.jpg";
-import logout from "../../pages/assets/icons8-move-up-32.png";
+import logoutbtn from "../../pages/assets/icons8-move-up-32.png";
 import "./navbar.css";
 
 
@@ -129,7 +129,7 @@ const Navbar = () => {
                     </li>
                   </div>
                   <div>
-                    <img src={logout} alt="" onClick={doLogOut}/>
+                    <img src={logoutbtn} alt="" onClick={doLogOut}/>
                     LogOut
                   </div>
                   {/* <Dropdown.Item href="#/action-1">action</Dropdown.Item>

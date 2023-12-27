@@ -15,25 +15,12 @@ const [courtData, setcourtData] = useState([]);
 const navigate = useNavigate();
 
 
+
   useEffect(() => {
     getAllCourtData();
   }, []);
 
-  // const getAllCourtData = () => {
-  //   AxiosInstance.get("/users/getAllCourtData")
-  //     .then((Response) => {
-  //       setcourtData(Response.data);
-  //       // debugger;
-  //     })
-  //     .catch((err) => {
-  //     // debugger
-  //       if (err.response.data.message === 'unauthorized user')
-  //       {
-  //         localStorage.clear(() => navigate("/"));
-  //       }
-        
-  //     });
-  // };
+
   const getAllCourtData = () => {
     AxiosInstance.get("/users/getAllCourtData")
       .then((Response) => {
@@ -55,6 +42,7 @@ const navigate = useNavigate();
       <Navbar/>
       {courtData.map((court) => (
         <Cards data ={court} />
+
       ))}
 
       <div>

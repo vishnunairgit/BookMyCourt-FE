@@ -13,6 +13,7 @@ import Login from "../LandingPage/login/Login";
 import SignUp from "../LandingPage/signup/SignUp";
 
 const Landing = () => {
+  
     const [loginsignup, setloginsignup] = useState('login')
 
 
@@ -32,7 +33,6 @@ const Landing = () => {
             { loginsignup ==='login' &&  <Login setloginsignup={setloginsignup}/> }
             { loginsignup === 'signup' &&  <SignUp setloginsignup={setloginsignup}/> }
             
-
             </MDBCol>
           </MDBRow>
 

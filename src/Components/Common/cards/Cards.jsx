@@ -1,6 +1,5 @@
 import React  from "react";
 import { BASE_URL } from "../../constants/Constant";
-// import demmyimg from
 import { useNavigate } from "react-router-dom";
 import '../cards/cards.css'
 
@@ -12,16 +11,26 @@ function Cards({ data }) {
   const handleNavigationViewCourt = () => {
     navigate(`/CourtUserViewPage/${data._id}`);
   };
-  // const [editCourtdata, seteditCourtdata] = useState()
+
+  
+  const editCourtDetails = () => {
+    navigate(`/EditCourt/${data._id}`);
+  }
 
 
   return (
     <>
+    <div>
+    
+
+    </div>
+
       <div
         className=" row row-cols-2 row-cols-md-3 g-4"
         >
         <div className="card mb-4 " style={{ maxWidth: "540px" }}>
-          <div className="row g-0-" onClick={handleNavigationViewCourt}>
+          <div className="row g-0-" 
+          onClick={handleNavigationViewCourt}>
             <div className="col-md-4">
               <img
                 src={`${BASE_URL}/Courts/${data?.courtPic}`}
@@ -39,13 +48,12 @@ function Cards({ data }) {
                   <small className="text-muted">Last updated 3 mins ago</small>
                 </p>
               </div>
-              
             </div>
           </div>
           {  <div className="Courtviewfooter">
-            <button type="button" class="btn btn-dark" >EDIT</button>
+            <button type="button" class="btn btn-dark" onClick={editCourtDetails}>EDIT</button>
 
-            <button type="button" class="btn btn-dark">SELETE</button>
+            <button type="button" class="btn btn-dark">DELETE</button>
           </div>}
         </div>
       </div>
