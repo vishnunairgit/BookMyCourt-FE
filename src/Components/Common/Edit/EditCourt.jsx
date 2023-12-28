@@ -6,10 +6,7 @@ import AxiosInstance from "../../config/AxiosInstance";
 import { setcourtDetails } from "../../../ToolKit/courtSlic";
 
 
-function EditCourt({}) {
-
-
-
+function EditCourt({ }) {
 
   // for edit the court dettails we can do 2 way.  
       // 1 -- call the api here, the bwllow code
@@ -17,26 +14,27 @@ function EditCourt({}) {
       
         // 1 -- call the api here, the bwllow code
 
-      // const {courtId }=useParams()
+      const {courtId }=useParams()
 
-      // useEffect(()=>{
-      //   getSingleCourtData()
+      useEffect(()=>{
+        getSingleCourtData()
 
-      // },[])
-      // function getSingleCourtData() {
-      //   AxiosInstance.get("users/getSingleCourtData", { params: { courtId: courtId } })
-      //     .then((res) => {
-      //       debugger
-      //       // setsingleCourtData(res.data);
-      //       seteditCourtData(res.data);
-      //     })
-      //     .catch((err) => {
-      //       console.log(err);
-      //       // toastError("somthing went worng");
-      //     });
-      // }
+      },[])
 
-  // const [editCourtData, seteditCourtData] = useState()
+      function getSingleCourtData() {
+        AxiosInstance.get("users/getSingleCourtData", { params: { courtId: courtId } })
+          .then((res) => {
+            debugger
+            // setsingleCourtData(res.data);
+            seteditCourtData(res.data);
+          })
+          .catch((err) => {
+            console.log(err);
+            // toastError("somthing went worng");
+          });
+      }
+
+  const [editCourtData, seteditCourtData] = useState()
 
     // 2-- calling court dettails throught redux
 
@@ -47,6 +45,7 @@ function EditCourt({}) {
 //  console.log(courtDetails,"---------------");
   // const navigate = useNavigate();
   const dispatch = useDispatch()
+
 
   const handleCourtEdit=(e)=>{
     const {name,value}=e.target;

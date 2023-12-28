@@ -45,9 +45,9 @@ const navigate = useNavigate();
 
       ))}
 
-      <div>
+      {/* <div >
         <Cards />
-      </div>
+      </div> */}
     </>
   );
 }

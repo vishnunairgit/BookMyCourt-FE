@@ -56,6 +56,7 @@ function AddCourtForm() {
     })
     .catch((err)=>{
       toastError('something went worng')
+      console.log(err);
     })
     
   };
