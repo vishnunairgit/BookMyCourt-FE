@@ -40,14 +40,9 @@ const navigate = useNavigate();
   return (
     <>
       <Navbar/>
-      {courtData.map((court) => (
-        <Cards data ={court} />
-
-      ))}
-
-      {/* <div >
-        <Cards />
-      </div> */}
+      <div className="homeCardContainer"  >
+      {courtData.map((court) => (<Cards data ={court}  />))}
+      </div>
     </>
   );
 }

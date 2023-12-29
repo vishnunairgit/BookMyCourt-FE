@@ -2,3 +2,8 @@
 {
     color: white !important;
 }
+.homeCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

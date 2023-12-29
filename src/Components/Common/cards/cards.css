@@ -3,3 +3,14 @@
     display: flex;
     justify-content: space-around;
 }
+.img-fluid
+{
+    border-radius:5px;
+    padding:10px;
+    box-shadow: 5px 5px rgb(52, 73, 51);
+}
+.cardmain{
+    padding: 25px;
+    margin: 10px;
+    /* width: 50%; */
+}

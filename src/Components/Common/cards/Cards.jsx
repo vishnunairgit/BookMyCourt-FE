@@ -1,9 +1,7 @@
-import React  from "react";
+import React from "react";
 import { BASE_URL } from "../../constants/Constant";
 import { useNavigate } from "react-router-dom";
-import '../cards/cards.css'
-
-
+import "./cards.css";
 
 function Cards({ data }) {
   const navigate = useNavigate();
@@ -12,30 +10,22 @@ function Cards({ data }) {
     navigate(`/CourtUserViewPage/${data._id}`);
   };
 
-  
   const editCourtDetails = () => {
     navigate(`/EditCourt/${data._id}`);
-  }
-
+  };
 
   return (
     <>
-    <div>
-    
-
-    </div>
-
-      <div
-        className=" row row-cols-2 row-cols-md-3 g-4"
-        >
+    <div className="cardmain">
+    <div className=" row row-cols row-cols g-2">
         <div className="card mb-4 " style={{ maxWidth: "540px" }}>
-          <div className="row g-0-" 
-          onClick={handleNavigationViewCourt}>
+          <div className="row g-0-" onClick={handleNavigationViewCourt}>
             <div className="col-md-4">
               <img
                 src={`${BASE_URL}/Courts/${data?.courtPic}`}
                 className="img-fluid rounded-start"
                 alt="..."
+                style={{height:'210px', width:'300px'}}
               />
             </div>
             <div className="col-md-8">
@@ -50,13 +40,18 @@ function Cards({ data }) {
               </div>
             </div>
           </div>
-          {  <div className="Courtviewfooter">
-            <button type="button" class="btn btn-dark" onClick={editCourtDetails}>EDIT</button>
+          {
+            <div className="Courtviewfooter">
+              {/* <button type="button" class="btn btn-dark" onClick={editCourtDetails}>EDIT</button> */}
 
-            <button type="button" class="btn btn-dark">DELETE</button>
-          </div>}
+              {/* <button type="button" class="btn btn-dark">DELETE</button> */}
+            </div>
+          }
         </div>
       </div>
+    </div>
+
+      
     </>
   );
 }
