@@ -28,7 +28,7 @@ function App() {
           {/* userRoute */}
 
           <Route element={<UserAuth />}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Home/>} />
             <Route
               path="/CourtUserViewPage/:id"
               element={<CourtUserViewPage />}
