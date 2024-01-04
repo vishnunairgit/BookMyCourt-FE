@@ -6,11 +6,11 @@
 .img-fluid
 {
     border-radius:5px;
-    padding:10px;
-    box-shadow: 5px 5px rgb(52, 73, 51);
+    padding:5px;
+    box-shadow: 10px 10px 5px rgb(0, 9, 12);    /* width: 50%; */
 }
 .cardmain{
-    padding: 25px;
+    padding: 5px;
     margin: 10px;
-    /* width: 50%; */
+    box-shadow: 8px 10px 5px rgb(158, 162, 163);    /* width: 50%; */
 }

@@ -18,7 +18,7 @@ function Cards({ data }) {
     <>
     <div className="cardmain">
     <div className=" row row-cols row-cols g-2">
-        <div className="card mb-4 " style={{ maxWidth: "540px" }}>
+        <div className="card " style={{ maxWidth: "540px" }}>
           <div className="row g-0-" onClick={handleNavigationViewCourt}>
             <div className="col-md-4">
               <img
