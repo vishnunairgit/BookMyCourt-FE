@@ -7,10 +7,8 @@ import CourtBooking from '../../courtBooking/CourtBooking'
 function CourtUserViewPage() {
   return (
     <>
-
-      <Navbar/>
-      <CourtBooking/>
-
+    <Navbar/>
+    <CourtBooking/>
     </>
   )
 }

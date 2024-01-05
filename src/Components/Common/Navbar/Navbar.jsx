@@ -34,6 +34,9 @@ const Navbar = () => {
     navigate("/MyBookings");
     // console.log(addNewCourt);
   };
+  const handleHome =()=>{
+    navigate("/home")
+  }
 
 
 
@@ -42,9 +45,9 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-primary ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/home">
+          <span className="navbar-brand" onClick={handleHome}>
             HOME
-          </a>
+          </span>
           <button
             className="navbar-toggler"
             type="button"

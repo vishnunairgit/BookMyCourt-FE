@@ -6,20 +6,13 @@ import AxiosInstance from "../../config/AxiosInstance";
 import Cards from "../../Common/cards/Cards";
 import { useNavigate } from "react-router-dom";
 
-
-
-
 function Home() {
-
-const [courtData, setcourtData] = useState([]);
-const navigate = useNavigate();
-
-
+  const [courtData, setcourtData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getAllCourtData();
-  }, []);
-
+  },[]);
 
   const getAllCourtData = () => {
     AxiosInstance.get("/users/getAllCourtData")
@@ -28,20 +21,20 @@ const navigate = useNavigate();
       })
       .catch((err) => {
         // debugger
-        if (err.response.data.message === 'unauthorized user') {
+        if (err.response.data.message === "unauthorized user") {
           localStorage.clear(() => navigate("/"));
           // debugger
         }
       });
   };
 
-
-
   return (
     <>
-      <Navbar/>
-      <div className="homeCardContainer"  >
-      {courtData.map((court) => (<Cards data ={court}  />))}
+      <Navbar />
+      <div className="homeCardContainer">
+        {courtData.map((court) => (
+          <Cards data={court}/>
+        ))}
       </div>
     </>
   );
