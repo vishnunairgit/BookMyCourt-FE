@@ -1,6 +1,7 @@
-export const BASE_URL=process.env.REACT_APP_URL;
+// export const BASE_URL=process.env.REACT_APP_URL;
+export const BASE_URL='https://bookmycourt-app-api-w6u5.onrender.com';
 
-console.log(process.env.REACT_APP_URL,"ENV");
+console.log(BASE_URL,"ENV");
 
 // export const BASE_URL = 'http://localhost:4000'
 
