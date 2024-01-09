@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import Landing from "./Components/pages/Landing.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/pages/home/Home.jsx";
 import Toastcontainer from "./Components/Common/Toastcontainer.jsx";
 import AddNewCourt from "./Components/pages/addNewCourt/AddNewCourt.jsx";
@@ -14,15 +14,18 @@ import {
   UserAuth,
 } from "./Authorization/Authorization.js";
 import EditCourt from "./Components/Common/Edit/EditCourt.jsx";
+// import { useEffect } from "react";
 
 function App() {
+ 
+
   return (
     <>
       <Toastcontainer />
       <BrowserRouter>
         <Routes>
           <Route element={<LoginAuth />}>
-            <Route path="" element={<Landing />} />
+            <Route path="/" element={<Landing />} />
           </Route>
 
           {/* userRoute */}

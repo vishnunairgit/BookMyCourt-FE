@@ -134,14 +134,9 @@ const Login = ({ setloginsignup }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <MDBBtn
-            className="mb-4 px-5"
-            color="dark"
-            size="lg"
-            onClick={handlelogin}>
-            {/* onClick{handlelogin} */}
-            Login
-          </MDBBtn>
+         
+
+          <button type="button" className="btn btn-dark" onClick={handlelogin}>Login</button>
           <a className="small text-muted" href="#!">
             Forgot password?
           </a>
