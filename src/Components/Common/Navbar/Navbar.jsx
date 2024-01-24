@@ -133,7 +133,7 @@ const Navbar = () => {
                     </li>
                   </div>
                   <div onClick={doLogOut}>
-                    <img src={logoutbtn} alt="" />
+                    <img src={logoutbtn} alt="logout" />
                     LogOut
                   </div>
                   {/* <Dropdown.Item href="#/action-1">action</Dropdown.Item>
