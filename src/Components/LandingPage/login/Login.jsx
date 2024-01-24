@@ -134,8 +134,6 @@ const Login = ({ setloginsignup }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-         
-
           <button type="button" className="btn btn-dark" onClick={handlelogin}>Login</button>
           <a className="small text-muted" href="#!">
             Forgot password?

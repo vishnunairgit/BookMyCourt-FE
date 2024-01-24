@@ -247,7 +247,7 @@ function CourtBooking() {
 
         toastSucces("Booking Success");
         setusershow(false);
-
+        window.location.href = '/home'
         //  Optionally, you can wait for a few seconds before reloading the page
 
         // setTimeout(() => {

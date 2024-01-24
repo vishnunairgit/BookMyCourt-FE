@@ -62,27 +62,27 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {userDetails.role === 1 && (
                 <li className="nav-item">
-                  <a
+                  <span
                     className="nav-link active"
                     aria-current="page"
                     onClick={handleNavigation}>
                     ADD NEW COURT
-                  </a>
+                  </span>
                 </li>
               )}
               <li className="nav-item">
-                <a
+                <span
                   className="nav-link active"
                   aria-current="page"
                   onClick={handleNavigationMyBooking}>
                   My Bookings
-                </a>
+                </span>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              {/* <li className="nav-item">
+                <span className="nav-link" href="#">
                   Link
-                </a>
-              </li>
+                </span>
+              </li> */}
 
               <DropdownButton
                 id="dropdown-basic-button"
@@ -119,20 +119,21 @@ const Navbar = () => {
 
                 <DropdownButton
                   id="dropdown-basic-button"
-                  title="Dropdown button">
-                  <div className="logout">
+                  title="User">
+                  <div className="logout" >
                     <li className="nav-item">
-                      <a
-                        className="nav-link active logout"
-                        // style={{ color: "black" }}
-                        aria-current="page"
-                        href="#">
-                        user : {userDetails.fname} {userDetails.lname}
-                      </a>
+                    <span
+                    className="active "
+                          // style={{ color: 'blue' }} 
+                          // Change 'blue' to your desired color
+                          aria-current="page"
+                          >
+                          user : {userDetails.fname} {userDetails.lname} 
+                      </span>
                     </li>
                   </div>
-                  <div>
-                    <img src={logoutbtn} alt="" onClick={doLogOut}/>
+                  <div onClick={doLogOut}>
+                    <img src={logoutbtn} alt="" />
                     LogOut
                   </div>
                   {/* <Dropdown.Item href="#/action-1">action</Dropdown.Item>
